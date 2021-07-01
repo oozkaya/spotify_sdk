@@ -2,8 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 part 'player_restrictions.g.dart';
-@JsonSerializable(explicitToJson: true)
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class PlayerRestrictions {
   PlayerRestrictions({
     @required this.canSkipNext,

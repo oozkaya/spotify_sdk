@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'album.g.dart';
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class Album {
   Album(this.name, this.uri);
 

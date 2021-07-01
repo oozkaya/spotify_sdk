@@ -2,8 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'connection_status.g.dart';
-@JsonSerializable(explicitToJson: true)
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class ConnectionStatus {
   ConnectionStatus(
     this.message,

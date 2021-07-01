@@ -2,8 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 part 'capabilities.g.dart';
-@JsonSerializable(explicitToJson: true)
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class Capabilities {
   Capabilities({
     @required this.canPlayOnDemand,

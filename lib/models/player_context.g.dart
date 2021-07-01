@@ -6,7 +6,7 @@ part of 'player_context.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-PlayerContext _$PlayerContextFromJson(Map<String, dynamic> json) {
+PlayerContext _$PlayerContextFromJson(Map json) {
   return PlayerContext(
     json['title'] as String,
     json['subtitle'] as String,

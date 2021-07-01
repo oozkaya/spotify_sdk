@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'user_status.g.dart';
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class UserStatus {
   UserStatus(this.code, this.shortMessage, this.longMessage);
 

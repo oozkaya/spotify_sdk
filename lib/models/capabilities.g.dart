@@ -6,7 +6,7 @@ part of 'capabilities.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Capabilities _$CapabilitiesFromJson(Map<String, dynamic> json) {
+Capabilities _$CapabilitiesFromJson(Map json) {
   return Capabilities(
     canPlayOnDemand: json['can_play_on_demand'] as bool,
   );

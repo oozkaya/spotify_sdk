@@ -6,7 +6,7 @@ import 'track.dart';
 
 part 'player_state.g.dart';
 
-@JsonSerializable(explicitToJson: true)
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class PlayerState {
   PlayerState(
     this.track,

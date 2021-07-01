@@ -6,7 +6,7 @@ part of 'crossfade_state.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-CrossfadeState _$CrossfadeStateFromJson(Map<String, dynamic> json) {
+CrossfadeState _$CrossfadeStateFromJson(Map json) {
   return CrossfadeState(
     json['duration'] as int,
     isEnabled: json['isEnabled'] as bool,

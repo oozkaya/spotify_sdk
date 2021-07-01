@@ -6,7 +6,7 @@ part of 'player_options.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-PlayerOptions _$PlayerOptionsFromJson(Map<String, dynamic> json) {
+PlayerOptions _$PlayerOptionsFromJson(Map json) {
   return PlayerOptions(
     _$enumDecodeNullable(_$RepeatModeEnumMap, json['repeat']),
     isShuffling: json['shuffle'] as bool,

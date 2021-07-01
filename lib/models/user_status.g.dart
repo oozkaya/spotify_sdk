@@ -6,7 +6,7 @@ part of 'user_status.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-UserStatus _$UserStatusFromJson(Map<String, dynamic> json) {
+UserStatus _$UserStatusFromJson(Map json) {
   return UserStatus(
     json['code'] as int,
     json['short_text'] as String,
