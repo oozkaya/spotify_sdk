@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 part 'crossfade_state.g.dart';
-
+@JsonSerializable(explicitToJson: true)
 @JsonSerializable()
 class CrossfadeState {
   CrossfadeState(

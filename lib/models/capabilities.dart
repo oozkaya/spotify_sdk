@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/foundation.dart';
 
 part 'capabilities.g.dart';
-
+@JsonSerializable(explicitToJson: true)
 @JsonSerializable()
 class Capabilities {
   Capabilities({

@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'player_context.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true)
 class PlayerContext {
   PlayerContext(this.title, this.subtitle, this.type, this.uri);
 
