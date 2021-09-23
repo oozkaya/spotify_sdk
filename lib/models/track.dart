@@ -6,7 +6,7 @@ import 'image_uri.dart';
 
 part 'track.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class Track {
   Track(
     this.album,

@@ -6,7 +6,7 @@ part of 'image_uri.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ImageUri _$ImageUriFromJson(Map<String, dynamic> json) {
+ImageUri _$ImageUriFromJson(Map json) {
   return ImageUri(
     json['raw'] as String,
   );

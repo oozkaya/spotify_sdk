@@ -6,7 +6,7 @@ part of 'album.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Album _$AlbumFromJson(Map<String, dynamic> json) {
+Album _$AlbumFromJson(Map json) {
   return Album(
     json['name'] as String,
     json['uri'] as String,

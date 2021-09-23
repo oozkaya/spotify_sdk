@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'artist.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class Artist {
   Artist(this.name, this.uri);
 

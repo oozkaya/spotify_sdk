@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'capabilities.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class Capabilities {
   Capabilities({
     required this.canPlayOnDemand,

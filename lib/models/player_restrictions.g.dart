@@ -6,7 +6,7 @@ part of 'player_restrictions.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-PlayerRestrictions _$PlayerRestrictionsFromJson(Map<String, dynamic> json) {
+PlayerRestrictions _$PlayerRestrictionsFromJson(Map json) {
   return PlayerRestrictions(
     canSkipNext: json['can_skip_next'] as bool,
     canSkipPrevious: json['can_skip_prev'] as bool,

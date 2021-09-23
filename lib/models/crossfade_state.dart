@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'crossfade_state.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class CrossfadeState {
   CrossfadeState(
     this.duration, {
