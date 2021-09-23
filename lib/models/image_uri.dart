@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'image_uri.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class ImageUri {
   ImageUri(this.raw);
 

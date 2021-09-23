@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'player_restrictions.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class PlayerRestrictions {
   PlayerRestrictions({
     required this.canSkipNext,

@@ -6,7 +6,7 @@ part of 'artist.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Artist _$ArtistFromJson(Map<String, dynamic> json) {
+Artist _$ArtistFromJson(Map json) {
   return Artist(
     json['name'] as String?,
     json['uri'] as String?,

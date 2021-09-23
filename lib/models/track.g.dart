@@ -6,15 +6,15 @@ part of 'track.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Track _$TrackFromJson(Map<String, dynamic> json) {
+Track _$TrackFromJson(Map json) {
   return Track(
-    Album.fromJson(json['album'] as Map<String, dynamic>),
-    Artist.fromJson(json['artist'] as Map<String, dynamic>),
+    Album.fromJson(Map<String, dynamic>.from(json['album'] as Map)),
+    Artist.fromJson(Map<String, dynamic>.from(json['artist'] as Map)),
     (json['artists'] as List<dynamic>)
-        .map((e) => Artist.fromJson(e as Map<String, dynamic>))
+        .map((e) => Artist.fromJson(Map<String, dynamic>.from(e as Map)))
         .toList(),
     json['duration_ms'] as int,
-    ImageUri.fromJson(json['image_id'] as Map<String, dynamic>),
+    ImageUri.fromJson(Map<String, dynamic>.from(json['image_id'] as Map)),
     json['name'] as String,
     json['uri'] as String,
     isEpisode: json['is_episode'] as bool,
@@ -23,11 +23,11 @@ Track _$TrackFromJson(Map<String, dynamic> json) {
 }
 
 Map<String, dynamic> _$TrackToJson(Track instance) => <String, dynamic>{
-      'album': instance.album,
-      'artist': instance.artist,
-      'artists': instance.artists,
+      'album': instance.album.toJson(),
+      'artist': instance.artist.toJson(),
+      'artists': instance.artists.map((e) => e.toJson()).toList(),
       'duration_ms': instance.duration,
-      'image_id': instance.imageUri,
+      'image_id': instance.imageUri.toJson(),
       'is_episode': instance.isEpisode,
       'is_podcast': instance.isPodcast,
       'name': instance.name,

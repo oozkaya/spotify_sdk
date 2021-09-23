@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'library_state.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(explicitToJson: true, anyMap: true)
 class LibraryState {
   LibraryState(
     this.uri, {
